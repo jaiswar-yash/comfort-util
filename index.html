@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Checkbox Example</title>
+</head>
+  
+<body>
+    <form>
+      <input type="checkbox" id="option1" name="option1" value='        Write-Host "Enabling Dark Mode"
+      $Theme = "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize"
+      Set-ItemProperty $Theme AppsUseLightTheme -Value 0
+      Write-Host "Enabled"''>
+      <label for="option1">Option 1</label><br>
+      
+      <input type="checkbox" id="option2" name="option2" value="Option 2">
+      <label for="option2">Option 2</label><br>
+      
+      <input type="checkbox" id="option3" name="option3" value="Option 3">
+      <label for="option3">Option 3</label><br>
+      <input type="checkbox" id="option4" name="option4" value="Option 4">
+      <label for="option4">Option 4</label><br>
+      <input type="checkbox" id="option5" name="option5" value="Option 5">
+      <label for="option5">Option 5</label><br>
+    
+    </form>
+    <br>
+    <button id="downloadBtn">Download Selected Options</button>
+    <script>
+      const downloadBtn = document.querySelector('#downloadBtn');
+      downloadBtn.addEventListener('click', function() {
+        const selectedOptions = [];
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+        checkboxes.forEach(function(checkbox) {
+          selectedOptions.push(checkbox.value);
+        });
+        const data = new Blob([selectedOptions.join(', ')], {type: 'application/x-powershell'});
+        const url = window.URL.createObjectURL(data);
+        const downloadLink = document.createElement('a');
+        downloadLink.href = url;
+        downloadLink.download = 'selected_options.ps1';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+        setTimeout(function() {
+          document.body.removeChild(downloadLink);
+          window.URL.revokeObjectURL(url);  
+        }, 0);
+      });
+    </script>
+  </body>
+</html>
