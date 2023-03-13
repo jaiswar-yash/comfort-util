@@ -7,10 +7,7 @@
   
 <body>
     <form>
-      <input type="checkbox" id="option1" name="option1" value='        Write-Host "Enabling Dark Mode"
-      $Theme = "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize"
-      Set-ItemProperty $Theme AppsUseLightTheme -Value 0
-      Write-Host "Enabled"''>
+      <input type="checkbox" id="option1" name="option1" value='PowerShell -ExecutionPolicy Unrestricted -Command "$bin = (New-Object -ComObject Shell.Application).NameSpace(10); $bin.items() | ForEach {; Write-Host "^""Deleting $($_.Name) from Recycle Bin"^""; Remove-Item $_.Path -Recurse -Force; }"'>
       <label for="option1">Option 1</label><br>
       
       <input type="checkbox" id="option2" name="option2" value="Option 2">
@@ -38,7 +35,7 @@
         const url = window.URL.createObjectURL(data);
         const downloadLink = document.createElement('a');
         downloadLink.href = url;
-        downloadLink.download = 'selected_options.ps1';
+        downloadLink.download = 'selected_options.bat';
         document.body.appendChild(downloadLink);
         downloadLink.click();
         setTimeout(function() {
