@@ -3,9 +3,8 @@ Problem Statement:</br>
 Unnecessary Bloatwares and services used unnecessary resources which makes the PC 30-40% slower.</br></br>
 
 ## About the Project
-Comfort util is a windows based project which is a website that is used for removing or disabling the bloatwares and services which are not used most of the time. This project will provide web as well as software based platform (more specifically Powershell Script).
-The most important technology that used in this project is powershell. It contains powershell commands which will perform the desired tasks.</br>
-You can directly download the exexutable file.</br></br>
+Comfort util is a windows based project which is a webbase and also portable execution file that is used for removing or disabling the bloatwares and services which are not used most of the time.The most important technology that used in this project is powershell. It contains powershell commands which will perform the desired tasks.</br>
+You can directly [download](https://github.com/jaiswar-yash/comfort-util/raw/main/main.exe) the exexutable file.</br></br>
 
 ## Overview
 - Install
