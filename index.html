@@ -282,7 +282,7 @@
             New-Item -Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots" -Force | Out-Null
         }
         Set-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\PolicyManager\default\WiFi\AllowAutoConnectToWiFiSenseHotspots" -Name "Value" -Type DWord -Value 0'>
-      <label for="option11">Disable WiFi</label><br>
+      <label for="option11">Disable WiFi Sense</label><br>
       
       <input type="checkbox" id="option12" name="option12" value='
         Write-Host "Delete Temp Files"
