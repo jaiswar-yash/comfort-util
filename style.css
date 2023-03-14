@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.privacy {
+    font-size: 33px;
+    border-radius: 52px;
+    display: inline-block;
+    border: 9px solid #04427B;
+    /* padding: 1rem 33rem; */
+    vertical-align: middle;
+    color: white;
+    border-style: dotted;
+    border: 2px solid #00A4BD;
+  padding: 20px 139px;
+  box-shadow: 6px 4px #00A4BD;
+  text-align: left;
+}
+
+.Essential-Services {
+    align-items:end;
+    border-radius: 52px;
+    font-size: 40px;
+    display: inline-block;
+    /* border: 9px solid #04427B; */
+    /* padding: 1rem 24.5rem; */
+    vertical-align: middle;
+    border: 2px solid #00A4BD;
+  padding: 10px;
+  box-shadow: 6px 4px #00A4BD;
+  text-align: left;
+}
+
+.bg-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: blur(6px);
+
+}
+.downloadBtn-class{
+    text-align: center;
+    padding: 15px 32px;
+    
+}
+
+.inner-button{
+    border-radius: 30px;
+    padding: 15px 32px;
+    background-color: white;
+    transition:all 1s;
+}
+.githublink{
+    transition: all 1s;
+    border-radius: 100px;
+    padding: 15px 32px;
+}
+.inner-button:hover{
+    width: 350px;
+    background-color: red;
+}
+
+.githublink:hover{
+    width: 350px;
+    background-color: greenyellow;
+}
+
+.intro{
+    text-align: center;
+    padding: 30px 150px;
+    font-size: 18px;
+}
+
+.logo{
+    border-radius: 50%;
+    padding: 21px 21px;
+    padding-left: 21px;
+}
+
+.maintitle{
+    padding: 25px 0px;
+    padding-left: 101px;
+}
+
+.welcomegif{
+    text-align: center;
+}
+
+.note{
+    font-size: 15px;
+    padding: 30px 300px;
+}
+
+.whole_privacy{
+    text-align: center;
+}
+
+.whole_essential_services{
+    text-align: center;
+}
+
+.full-fledged{
+    text-align: center;
+    padding: 17px 12px;
+    font-size: 30px;
+}
+
+.full-fledged-new{
+    text-align: center;
+    padding: 24px 12px;
+    font-size: 23px;
+}
+
+.heading{
+    padding: 22px 28px;
+    text-align: center;
+    font-size: 40px;
+}
