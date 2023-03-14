@@ -10,7 +10,7 @@ You can directly download the exexutable file.</br></br>
 ## Overview
 - Install
   - Installs all selected programs
-  - Has Upgrade ALL existing programs button
+  - Upgrades ALL existing programs 
 - Tweaks
   - Optimizes windows and reduces running processes
   - Has recommended settings for each type of system
@@ -27,6 +27,16 @@ HTML</br>
 JavaScript</br>
 CSS</br>
 Powershell</br>
+
+## Issues
+
+If you have any issues with the script please submit them to Issues tab here on GitHub.
+
+## Contribute Code
+
+**Any new code must be submitted to Test BRANCH! - No merges will be performed on MAIN branch**
+
+For pull requests, be sure and document ALL changes. If you add something to the tweaks section the undo MUST also be applied to remove the new tweaks. Any tweak not following this format will be denied. Any code not well documented will be denied.
 
 ## Team Members:
 1. [Yash Jaiswar](https://github.com/jaiswar-yash) (Team Leader)
