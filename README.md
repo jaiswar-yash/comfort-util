@@ -1,4 +1,4 @@
-# Comfort-util By Cyber-Regiment (Hackvengers)
+# Comfort-util
 Problem Statement:</br>
 Unnecessary Bloatwares and services used unnecessary resources which makes the PC 30-40% slower.</br></br>
 
